@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "k8s-gcr-io",
+    "routes": [
+        {
+            "src": "/v2/(.*)",
+            "dest": "https://gcr.io/v2/google_containers/$1"
+        }
+    ],
+    "github": {
+        "enabled": true,
+        "autoJobCancelation": true
+    }
+}
